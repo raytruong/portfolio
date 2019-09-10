@@ -113,7 +113,12 @@ export default {
                         this.name = 'Ray Truon|';
                         setTimeout(() => {
                           this.name = 'Ray Truong|';
-                        }, 100);
+                          let blink = false;
+                          setInterval(() => {
+                            blink = !blink;
+                            blink ? (this.name = 'Ray Truong') : (this.name = 'Ray Truong|');
+                          }, 900);
+                        }, 200);
                       }, 100);
                     }, 100);
                   }, 100);
@@ -124,11 +129,6 @@ export default {
         }, 100);
       }, 300);
     }, 500);
-    let blink = false;
-    setInterval(() => {
-      blink = !blink;
-      blink ? (this.name = 'Ray Truong') : (this.name = 'Ray Truong|');
-    }, 900);
   },
   computed: {}
 };
