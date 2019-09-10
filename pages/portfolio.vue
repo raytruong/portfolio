@@ -5,7 +5,7 @@
       <v-card-title class="display-1 font-weight-thin">Hmm...</v-card-title>
       <v-card-text class="subtitle-2 font-weight-thin">looks like this page isn't quite ready yet.</v-card-text>
       <v-card-actions>
-        <v-btn tile outlined color="primary" class="ma-1" nuxt to="/">return</v-btn>
+        <v-btn tile outlined color="primary" class="ma-1" nuxt to="/">let him sleep</v-btn>
       </v-card-actions>
     </v-card>
   </v-layout>
