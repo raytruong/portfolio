@@ -4,14 +4,14 @@
       <v-container>
         <v-card-title class="display-2 font-weight-thin">{{name}}</v-card-title>
         <v-card-text class="subtitle-2 font-weight-thin">{{subheading}}</v-card-text>
-        <blockquote class="blockquote">
+        <!-- <blockquote class="blockquote">
           <small>&#8220;{{quote}}&#8221;</small>
           <footer>
             <small>
               <em>&mdash;{{author}}</em>
             </small>
           </footer>
-        </blockquote>
+        </blockquote>-->
         <v-card-actions>
           <v-btn
             v-for="button in buttons"
@@ -47,7 +47,7 @@ import axios from 'axios';
 export default {
   data: function() {
     return {
-      name: `Ray Truong`,
+      name: `|`,
       subheading: 'Software Engineer & Patagonia Enthusiast',
       buttons: [
         {
@@ -90,7 +90,46 @@ export default {
     };
   },
   created() {
-    axios.get('');
-  }
+    //Refactor later with function currying ;)
+    setTimeout(() => {
+      this.name = '|';
+      setTimeout(() => {
+        this.name = 'R|';
+        setTimeout(() => {
+          this.name = 'Ra|';
+          setTimeout(() => {
+            this.name = 'Ray|';
+            setTimeout(() => {
+              this.name = 'Ray |';
+              setTimeout(() => {
+                this.name = 'Ray T|';
+                setTimeout(() => {
+                  this.name = 'Ray Tr|';
+                  setTimeout(() => {
+                    this.name = 'Ray Tru|';
+                    setTimeout(() => {
+                      this.name = 'Ray Truo|';
+                      setTimeout(() => {
+                        this.name = 'Ray Truon|';
+                        setTimeout(() => {
+                          this.name = 'Ray Truong|';
+                        }, 100);
+                      }, 100);
+                    }, 100);
+                  }, 100);
+                }, 100);
+              }, 100);
+            }, 100);
+          }, 100);
+        }, 100);
+      }, 300);
+    }, 500);
+    let blink = false;
+    setInterval(() => {
+      blink = !blink;
+      blink ? (this.name = 'Ray Truong') : (this.name = 'Ray Truong|');
+    }, 900);
+  },
+  computed: {}
 };
 </script>
