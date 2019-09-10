@@ -20,9 +20,22 @@
             outlined
             :color="button.color"
             class="ma-1"
+            :href="button.href"
             nuxt
             :to="button.route"
           >{{button.text}}</v-btn>
+        </v-card-actions>
+        <v-card-actions>
+          <v-btn
+            v-for="button in media"
+            :key="button.icon"
+            class="mx-3"
+            :href="button.link"
+            :target="button.target"
+            text
+          >
+            <font-awesome-icon :icon="button.icon" color="white" style="font-size: 18px" />
+          </v-btn>
         </v-card-actions>
       </v-container>
     </v-card>
@@ -35,8 +48,13 @@ export default {
   data: function() {
     return {
       name: `Raymond Truong`,
-      subheading: 'Software Engineer',
+      subheading: 'Software Engineer & Patagonia Enthusiast',
       buttons: [
+        {
+          text: 'about',
+          color: '#' + 'primary',
+          route: 'about'
+        },
         {
           text: 'portfolio',
           color: '#' + 'primary',
@@ -45,17 +63,34 @@ export default {
         {
           text: 'resume',
           color: '#' + 'primary',
-          route: 'resume'
-        },
-        {
-          text: 'contact',
-          color: '#' + 'primary',
-          route: 'contact'
+          href: '/resume.pdf',
+          route: ''
         }
       ],
       quote: `Do you think... God stays in heaven because he too lives in fear of what he's created, here on Earth?`,
-      author: 'Dr. Romero, Spy Kids 2'
+      author: 'Dr. Romero, Spy Kids 2',
+      media: [
+        {
+          icon: ['fas', 'envelope'],
+          link: 'mailto:rtruong@purdue.edu',
+          target: '_blank'
+        },
+        {
+          icon: ['fab', 'github'],
+          link: 'https://www.github.com/raytruong',
+          target: '_blank'
+        },
+
+        {
+          icon: ['fab', 'linkedin'],
+          link: 'https://www.linkedin.com/in/ray-truong',
+          target: '_blank'
+        }
+      ]
     };
+  },
+  created() {
+    axios.get('');
   }
 };
 </script>

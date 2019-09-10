@@ -1,6 +1,6 @@
 <template>
   <v-app :style="{background: $vuetify.theme.themes[theme].background}">
-    <v-footer color="transparent">
+    <!-- <v-footer color="transparent">
       <v-btn
         v-for="button in media"
         :key="button.icon"
@@ -11,7 +11,7 @@
       >
         <font-awesome-icon :icon="button.icon" color="white" style="font-size: 18px" />
       </v-btn>
-    </v-footer>
+    </v-footer>-->
     <v-content>
       <nuxt />
     </v-content>
