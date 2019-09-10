@@ -71,18 +71,18 @@ export default {
       author: 'Dr. Romero, Spy Kids 2',
       media: [
         {
-          icon: ['fas', 'envelope'],
+          icon: ['fa', 'envelope'],
           link: 'mailto:rtruong@purdue.edu',
           target: '_blank'
         },
         {
-          icon: ['fab', 'github'],
+          icon: ['fab', 'github-alt'],
           link: 'https://www.github.com/raytruong',
           target: '_blank'
         },
 
         {
-          icon: ['fab', 'linkedin'],
+          icon: ['fab', 'linkedin-in'],
           link: 'https://www.linkedin.com/in/ray-truong',
           target: '_blank'
         }
