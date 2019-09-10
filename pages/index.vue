@@ -2,7 +2,7 @@
   <v-layout fill-height column justify-center align-center>
     <v-card tile flat color="transparent">
       <v-container>
-        <v-card-title class="display-3 font-weight-thin">{{name}}</v-card-title>
+        <v-card-title class="display-2 font-weight-thin">{{name}}</v-card-title>
         <v-card-text class="subtitle-2 font-weight-thin">{{subheading}}</v-card-text>
         <blockquote class="blockquote">
           <small>&#8220;{{quote}}&#8221;</small>
@@ -47,7 +47,7 @@ import axios from 'axios';
 export default {
   data: function() {
     return {
-      name: `Raymond Truong`,
+      name: `Ray Truong`,
       subheading: 'Software Engineer & Patagonia Enthusiast',
       buttons: [
         {
