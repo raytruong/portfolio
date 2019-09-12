@@ -50,6 +50,6 @@ export default {
 
 <style>
 .v-application {
-  font-family: 'Overpass', sans-serif;
+  font-family: 'Overpass !important', sans-serif;
 }
 </style>
