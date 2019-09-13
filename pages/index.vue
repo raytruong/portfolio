@@ -72,7 +72,7 @@ export default {
       media: [
         {
           icon: ['fa', 'envelope'],
-          link: 'mailto:rtruong@purdue.edu',
+          link: 'mailto:ray@raytruong.dev',
           target: '_blank'
         },
         {
