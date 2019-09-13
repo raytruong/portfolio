@@ -2,14 +2,14 @@
   <v-container class="mt-12">
     <v-layout class="mt-12" fill-height column justify-center align-center>
       <v-card flat color="transparent">
-        <v-card-title class="display-2 font-weight-thin">About</v-card-title>
-        <v-card-text class="subtitle-1 font-weight-thin">{{blurb}}</v-card-text>
-        <v-card-text class="subtitle-1 font-weight-thin">{{p1}}</v-card-text>
-        <v-card-text class="subtitle-1 font-weight-thin">{{p2}}</v-card-text>
-        <v-card-text class="subtitle-1 font-weight-thin">{{p3}}</v-card-text>
-        <v-card-text class="subtitle-1 font-weight-thin">{{p4}}</v-card-text>
-        <v-card-text class="subtitle-1 font-weight-thin">{{p5}}</v-card-text>
-        <v-card-text class="subtitle-1 font-weight-thin">{{p6}}</v-card-text>
+        <v-card-title class="display-2 font-weight">About</v-card-title>
+        <v-card-text class="subtitle-1 font-weight">{{blurb}}</v-card-text>
+        <v-card-text class="subtitle-1 font-weight">{{p1}}</v-card-text>
+        <v-card-text class="subtitle-1 font-weight">{{p2}}</v-card-text>
+        <v-card-text class="subtitle-1 font-weight">{{p3}}</v-card-text>
+        <v-card-text class="subtitle-1 font-weight">{{p4}}</v-card-text>
+        <v-card-text class="subtitle-1 font-weight">{{p5}}</v-card-text>
+        <v-card-text class="subtitle-1 font-weight">{{p6}}</v-card-text>
         <v-card-actions>
           <v-btn tile outlined color="primary" class="ma-1" nuxt to="/">return</v-btn>
         </v-card-actions>
