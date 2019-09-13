@@ -10,6 +10,7 @@
         <v-card-text class="subtitle-1 font-weight">{{p4}}</v-card-text>
         <v-card-text class="subtitle-1 font-weight">{{p5}}</v-card-text>
         <v-card-text class="subtitle-1 font-weight">{{p6}}</v-card-text>
+        <v-card-text class="subtitle-1 font-weight">{{p7}}</v-card-text>
         <v-card-actions>
           <v-btn tile outlined color="primary" class="ma-1" nuxt to="/">return</v-btn>
         </v-card-actions>
