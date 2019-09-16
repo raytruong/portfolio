@@ -34,7 +34,8 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: [
+  ],
   /*
    ** Nuxt.js dev-modules
    */
@@ -44,6 +45,9 @@ export default {
    */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
+    ['@nuxtjs/google-analytics', {
+      id: 'UA-148138686-1'
+    }],
     [
       'nuxt-fontawesome',
       {
@@ -101,6 +105,6 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {}
+    extend(config, ctx) { }
   }
 };
