@@ -53,7 +53,7 @@ export default {
         {
           text: 'about',
           color: '#' + 'primary',
-          route: 'about'
+          route: 'portfolio'
         },
         {
           text: 'portfolio',
