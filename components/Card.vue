@@ -3,8 +3,8 @@
     v-bind="card"
   >
     <v-container>
-      <v-card-title class="display-2 font-weight-thin">{{card.name}}</v-card-title>
-      <v-card-text class="subtitle-2 font-weight-thin justify-center">{{card.subheading}}</v-card-text>
+      <v-card-title class="display-2 font-weight-light">{{card.name}}</v-card-title>
+      <v-card-text class="subtitle-2 font-weight-light justify-center">{{card.subheading}}</v-card-text>
       <v-card-actions>
         <v-btn
           v-for="button in buttons"
@@ -61,25 +61,25 @@ export default {
           text: 'resume',
           color: '#' + 'primary',
           href: '/resume.pdf',
-          route: ''
+          route: '/resume.pdf'
         }
       ],
       media: [
         {
           icon: ['fa', 'envelope'],
-          color: "white",
+          color: '#' + 'primary',
           link: 'mailto:ray@raytruong.dev',
           target: '_blank'
         },
         {
           icon: ['fab', 'github-alt'],
-          color: "white",
+          color: '#' + 'primary',
           link: 'https://www.github.com/raytruong',
           target: '_blank'
         },
         {
           icon: ['fab', 'linkedin-in'],
-          color: "white",
+          color: '#' + 'primary',
           link: 'https://www.linkedin.com/in/ray-truong',
           target: '_blank'
         }
