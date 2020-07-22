@@ -1,32 +1,40 @@
 <template>
-  <v-layout fill-height column justify-center align-center>
-    <blockquote class="blockquote">
-      {{ quote }}
-      <footer>
-        <small>
-          <em>&mdash;{{ author }}</em>
-        </small>
-      </footer>
-    </blockquote>
-    <v-btn tile outlined color="primary" class="ma-1" nuxt to="/">/</v-btn>
-  </v-layout>
+  <v-app dark>
+    <h1 v-if="error.statusCode === 404">
+      {{ pageNotFound }}
+    </h1>
+    <h1 v-else>
+      {{ otherError }}
+    </h1>
+    <NuxtLink to="/">
+      Home page
+    </NuxtLink>
+  </v-app>
 </template>
 
 <script>
-import axios from 'axios';
 export default {
-  data() {
-    return {
-      quote: "",
-      author: ''
-    };
+  layout: 'empty',
+  props: {
+    error: {
+      type: Object,
+      default: null
+    }
   },
-  async created() {
-    let res = await axios.get('api');
-    this.quote = res.data.text;
-    this.author = res.data.source;
+  data () {
+    return {
+      pageNotFound: '404 Not Found',
+      otherError: 'An error occurred'
+    }
+  },
+  head () {
+    const title =
+      this.error.statusCode === 404 ? this.pageNotFound : this.otherError
+    return {
+      title
+    }
   }
-};
+}
 </script>
 
 <style scoped>
