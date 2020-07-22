@@ -3,8 +3,8 @@
     v-bind="card"
   >
     <v-container>
-      <v-card-title class="display-2 font-weight-light">{{card.name}}</v-card-title>
-      <v-card-text class="subtitle-2 font-weight-light justify-center">{{card.subheading}}</v-card-text>
+      <v-card-title :class="card.name_typography">{{card.name}}</v-card-title>
+      <v-card-text :class="card.subheading_typography">{{card.subheading}}</v-card-text>
       <v-card-actions>
         <v-btn
           v-for="button in buttons"
@@ -41,8 +41,10 @@ export default {
   data () {
     return {
       card: {
-        name: `Ray Truong`,
+        name: `Ray Truong.`,
+        name_typography: 'display-3 font-weight-light',
         subheading: 'Software Engineer & Yappie',
+        subheading_typography: 'subtitle-2 font-weight-light justify-center',
         elevation: 0,
         color: "transparent"
       },
@@ -50,7 +52,7 @@ export default {
         {
           text: 'journal',
           color: '#' + 'primary',
-          route: 'blog'
+          route: 'journal'
         },
         {
           text: 'portfolio',
