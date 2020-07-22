@@ -42,7 +42,7 @@ export default {
     return {
       card: {
         name: `Ray Truong.`,
-        name_typography: 'display-3 font-weight-light',
+        name_typography: 'display-3 font-weight-thin',
         subheading: 'Software Engineer & Yappie',
         subheading_typography: 'subtitle-2 font-weight-light justify-center',
         elevation: 0,
@@ -63,7 +63,6 @@ export default {
           text: 'resume',
           color: '#' + 'primary',
           href: '/resume.pdf',
-          route: '/resume.pdf'
         }
       ],
       media: [
