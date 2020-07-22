@@ -3,8 +3,8 @@
     v-bind="card"
   >
     <v-container>
-      <v-card-title :class="card.name_typography">{{card.name}}</v-card-title>
-      <v-card-text :class="card.subheading_typography">{{card.subheading}}</v-card-text>
+      <v-name-title :class="name.typography" :color="name.color">{{name.text}}</v-name-title>
+      <v-card-text :class="subheading.typography" :color="subheading.color">{{subheading.text}}</v-card-text>
       <v-card-actions>
         <v-btn
           v-for="button in buttons"
@@ -41,46 +41,52 @@ export default {
   data () {
     return {
       card: {
-        name: `Ray Truong.`,
-        name_typography: 'display-3 font-weight-thin',
-        subheading: 'Software Engineer & Yappie',
-        subheading_typography: 'subtitle-2 font-weight-light justify-center',
         elevation: 0,
         color: "transparent"
+      },
+      name: {
+        text: `Ray Truong.`,
+        typography: 'display-3 font-weight-thin',
+        color: 'primary'
+      },
+      subheading: {
+        text: 'Software Engineer & Yappie',
+        typography: 'subtitle-2 font-weight-light justify-center',
+        color: 'primary'
       },
       buttons: [
         {
           text: 'journal',
-          color: '#' + 'primary',
+          color: 'primary',
           route: 'journal'
         },
         {
           text: 'portfolio',
-          color: '#' + 'primary',
+          color: 'primary',
           route: 'portfolio'
         },
         {
           text: 'resume',
-          color: '#' + 'primary',
+          color: 'primary',
           href: '/resume.pdf',
         }
       ],
       media: [
         {
           icon: ['fa', 'envelope'],
-          color: '#' + 'primary',
+          color: 'primary',
           link: 'mailto:ray@raytruong.dev',
           target: '_blank'
         },
         {
           icon: ['fab', 'github-alt'],
-          color: '#' + 'primary',
+          color: 'primary',
           link: 'https://www.github.com/raytruong',
           target: '_blank'
         },
         {
           icon: ['fab', 'linkedin-in'],
-          color: '#' + 'primary',
+          color: 'primary',
           link: 'https://www.linkedin.com/in/ray-truong',
           target: '_blank'
         }

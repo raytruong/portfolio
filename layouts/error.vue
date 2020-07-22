@@ -1,15 +1,33 @@
 <template>
-  <v-app dark>
-    <h1 v-if="error.statusCode === 404">
-      {{ pageNotFound }}
-    </h1>
-    <h1 v-else>
-      {{ otherError }}
-    </h1>
-    <NuxtLink to="/">
-      Home page
-    </NuxtLink>
-  </v-app>
+  <v-layout
+    fill-height
+    column
+    justify-center
+    align-center
+  >
+  <v-card
+    v-bind="card"
+  >
+    <v-container>
+      <v-card-title :class="card.subheading_typography">{{card.subheading}}</v-card-title>
+      <v-card-actions>
+        <v-btn
+          v-for="button in buttons"
+          :key="button.route"
+          tile
+          outlined
+          :color="button.color"
+          class="ma-1"
+          :href="button.href"
+          nuxt
+          :to="button.route"
+        >
+          {{button.text}}
+        </v-btn>
+      </v-card-actions>
+    </v-container>
+  </v-card>
+  </v-layout>
 </template>
 
 <script>
@@ -24,7 +42,20 @@ export default {
   data () {
     return {
       pageNotFound: '404 Not Found',
-      otherError: 'An error occurred'
+      otherError: 'An error occurred',
+      card: {
+        subheading: '404',
+        subheading_typography: 'subtitle font-weight-light justify-center',
+        color: "transparent",
+        elevation: 0
+      },
+      buttons: [
+        {
+          text: 'home',
+          color: '#' + 'primary',
+          route: '/'
+        }
+      ],
     }
   },
   head () {
