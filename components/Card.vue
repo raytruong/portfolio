@@ -1,12 +1,10 @@
 <template>
   <v-card
-    flat
-    tile
-    color="transparent"
+    v-bind="card"
   >
     <v-container>
-      <v-card-title class="display-2 font-weight-thin">{{name}}</v-card-title>
-      <v-card-text class="subtitle-2 font-weight-thin">{{subheading}}</v-card-text>
+      <v-card-title class="display-2 font-weight-thin">{{card.name}}</v-card-title>
+      <v-card-text class="subtitle-2 font-weight-thin justify-center">{{card.subheading}}</v-card-text>
       <v-card-actions>
         <v-btn
           v-for="button in buttons"
@@ -26,7 +24,7 @@
         <v-btn
           v-for="button in media"
           :key="button.icon"
-          class="mx-3"
+          class="mx-5"
           :href="button.link"
           :target="button.target"
           text
@@ -42,11 +40,15 @@
 export default {
   data () {
     return {
-      name: `Ray Truong`,
-      subheading: 'Software Engineer & Yappie',
+      card: {
+        name: `Ray Truong`,
+        subheading: 'Software Engineer & Yappie',
+        elevation: 0,
+        color: "transparent"
+      },
       buttons: [
         {
-          text: 'blog',
+          text: 'journal',
           color: '#' + 'primary',
           route: 'blog'
         },
