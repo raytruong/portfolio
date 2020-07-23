@@ -24,7 +24,7 @@
       <v-card-actions>
         <v-btn
           v-for="button in media"
-          :key="button.icon"
+          :key="button.key"
           class="mx-5"
           :href="button.link"
           :target="button.target"
@@ -75,18 +75,21 @@ export default {
       ],
       media: [
         {
+          key: 'email',
           icon: ['fa', 'envelope'],
           color: 'primary',
           link: 'mailto:ray@raytruong.dev',
           target: '_blank'
         },
         {
+          key: 'github',
           icon: ['fab', 'github-alt'],
           color: 'primary',
           link: 'https://www.github.com/raytruong',
           target: '_blank'
         },
         {
+          key: 'linkedin',
           icon: ['fab', 'linkedin-in'],
           color: 'primary',
           link: 'https://www.linkedin.com/in/ray-truong',

@@ -4,6 +4,17 @@
       <v-container>
         <v-layout justify-end>
           <v-btn
+              tile
+              elevation="0"
+              color="transparent"
+              class="ma-1"
+              nuxt
+              :to="entries"
+          >
+          {{bar.title_text}}
+          </v-btn>
+          <v-spacer></v-spacer>
+          <v-btn
               v-for="button in bar.buttons"
               :key="button.route"
               tile
@@ -32,13 +43,8 @@ export default {
         app: true,
         color: 'transparent',
         elevation: 0,
-        title_text: 'Ideas worth keeping to yourself',
+        title_text: 'ray\'s journal',
         buttons: [
-          {
-            text: 'entries',
-            color: 'primary',
-            route: 'entries'
-          },
           {
             text: 'home',
             color: 'primary',
