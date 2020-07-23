@@ -3,7 +3,7 @@
     v-bind="card"
   >
     <v-container>
-      <v-name-title :class="name.typography" :color="name.color">{{name.text}}</v-name-title>
+      <v-card-title :class="name.typography" :color="name.color">{{name.text}}</v-card-title>
       <v-card-text :class="subheading.typography" :color="subheading.color">{{subheading.text}}</v-card-text>
       <v-card-actions>
         <v-btn
@@ -14,6 +14,7 @@
           :color="button.color"
           class="ma-1"
           :href="button.href"
+          :target="button.target"
           nuxt
           :to="button.route"
         >
@@ -50,15 +51,15 @@ export default {
         color: 'primary'
       },
       subheading: {
-        text: 'Software Engineer & Yappie',
-        typography: 'subtitle-2 font-weight-light justify-center',
+        text: 'Computer Science Student & Denim Snob',
+        typography: 'subtitle-2 font-weight-light',
         color: 'primary'
       },
       buttons: [
         {
           text: 'journal',
           color: 'primary',
-          route: 'journal'
+          route: 'entries'
         },
         {
           text: 'portfolio',
@@ -69,6 +70,7 @@ export default {
           text: 'resume',
           color: 'primary',
           href: '/resume.pdf',
+          target: '_blank'
         }
       ],
       media: [

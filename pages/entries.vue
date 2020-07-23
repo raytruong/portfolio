@@ -9,3 +9,9 @@
     </v-card>
   </v-layout>
 </template>
+
+<script>
+export default {
+  layout: 'blog',
+}
+</script>
