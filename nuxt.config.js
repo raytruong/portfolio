@@ -60,11 +60,11 @@ export default {
         imports: [
           {
             set: '@fortawesome/free-solid-svg-icons',
-            icons: ['fas']
+            icons: ['faEnvelope']
           },
           {
             set: '@fortawesome/free-brands-svg-icons',
-            icons: ['fab']
+            icons: ['faGithubAlt', 'faLinkedinIn']
           }
         ]
       }
@@ -97,6 +97,7 @@ export default {
   ** See https://nuxtjs.org/api/configuration-build/
   */
   build: {
+    analyze: true
   },
   generate: {
     fallback: true
