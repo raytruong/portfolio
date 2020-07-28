@@ -1,3 +1,8 @@
+---
+title: Example post
+date: 7.28.20
+---
+
 # Basics of Markdown
 Markdown is the most popular markup language that can be used to format documents. It can be used to create *websites*,*ebooks*,*email*,*chats in discussions forums*.
 

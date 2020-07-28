@@ -1,4 +1,6 @@
 import colors from 'vuetify/es5/util/colors'
+const path = require("path");
+import Mode from 'frontmatter-markdown-loader/mode'
 
 export default {
   /*
@@ -83,7 +85,7 @@ export default {
        dark: {
          primary: colors.shades.white,
          accent: colors.teal,
-         secondary: colors.shades.black,
+         secondary: '#121212',
          info: colors.teal.lighten1,
          warning: colors.amber.base,
          error: colors.deepOrange.accent4,
@@ -97,6 +99,16 @@ export default {
   ** See https://nuxtjs.org/api/configuration-build/
   */
   build: {
+    extend(config, ctx) {
+      config.module.rules.push({
+        test: /\.md$/,
+        include: path.resolve(__dirname, "entries"),
+        loader: "frontmatter-markdown-loader",
+        options: {
+          mode: [Mode.VUE_COMPONENT, Mode.META]
+        }
+      });
+    }
   },
   generate: {
     fallback: true

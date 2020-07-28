@@ -6,9 +6,8 @@
           <v-btn
               tile
               elevation="0"
-              class="ma-1"
-              nuxt
-              :to="entries"
+              color="transparent"
+              class="disable ma-1"
           >
           {{bar.title_text}}
           </v-btn>
@@ -21,7 +20,7 @@
               :color="button.color"
               class="ma-1"
               nuxt
-              :to="button.route"
+              @click="$router.go(-1)"
           >
           {{button.text}}
           </v-btn>
@@ -47,7 +46,6 @@ export default {
           {
             text: 'back',
             color: 'primary',
-            route: 'entries',
           }
         ]
       }
@@ -56,5 +54,11 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
+.container {
+  max-width: 700px
+}
+.disable {
+  pointer-events: none
+}
 </style>

@@ -7,9 +7,7 @@
               tile
               elevation="0"
               color="transparent"
-              class="ma-1"
-              nuxt
-              :to="entries"
+              class="disable ma-1"
           >
           {{bar.title_text}}
           </v-btn>
@@ -60,5 +58,8 @@ export default {
 <style>
 .container {
   max-width: 700px
+}
+.disable {
+  pointer-events: none
 }
 </style>
