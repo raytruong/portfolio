@@ -51,7 +51,7 @@ export default {
         color: 'primary'
       },
       subheading: {
-        text: 'Computer Science Student & Denim Snob',
+        text: 'Software Engineering & Denim',
         typography: 'subtitle-2 font-weight-light',
         color: 'primary'
       },
