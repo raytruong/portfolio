@@ -6,7 +6,6 @@
           <v-btn
               tile
               elevation="0"
-              color="transparent"
               class="ma-1"
               nuxt
               :to="entries"
@@ -56,3 +55,6 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+</style>

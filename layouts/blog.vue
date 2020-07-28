@@ -30,9 +30,7 @@
       </v-container>
     </v-app-bar>
     <v-main>
-      <v-container>
         <nuxt />
-      </v-container>
     </v-main>
   </v-app>
 </template>
@@ -58,3 +56,9 @@ export default {
   }
 }
 </script>
+
+<style>
+.container {
+  max-width: 700px
+}
+</style>

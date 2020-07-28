@@ -52,7 +52,7 @@ export default {
       },
       subheading: {
         text: 'Software Engineering & Denim',
-        typography: 'subtitle-2 font-weight-light mt-4',
+        typography: 'body-2 mt-4',
         color: 'primary'
       },
       buttons: [
