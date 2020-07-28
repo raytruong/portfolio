@@ -47,12 +47,12 @@ export default {
       },
       name: {
         text: `Ray Truong.`,
-        typography: 'display-3 font-weight-thin',
-        color: 'primary'
+        typography: 'signature',
+        color: 'primary',
       },
       subheading: {
         text: 'Software Engineering & Denim',
-        typography: 'subtitle-2 font-weight-light',
+        typography: 'subtitle-2 font-weight-light mt-4',
         color: 'primary'
       },
       buttons: [
@@ -101,6 +101,10 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+.signature {
+  font-family: Yellowtail;
+  font-weight: 100;
+  font-size: 4rem;
+}
 </style>
