@@ -1,32 +1,71 @@
 <template>
-  <v-layout fill-height column justify-center align-center>
-    <blockquote class="blockquote">
-      {{ quote }}
-      <footer>
-        <small>
-          <em>&mdash;{{ author }}</em>
-        </small>
-      </footer>
-    </blockquote>
-    <v-btn tile outlined color="primary" class="ma-1" nuxt to="/">/</v-btn>
+  <v-layout
+    fill-height
+    column
+    justify-center
+    align-center
+  >
+  <v-card
+    v-bind="card"
+  >
+    <v-container>
+      <v-card-title :class="card.subheading_typography">{{card.subheading}}</v-card-title>
+      <v-card-actions>
+        <v-btn
+          v-for="button in buttons"
+          :key="button.route"
+          tile
+          outlined
+          :color="button.color"
+          class="ma-1"
+          :href="button.href"
+          nuxt
+          :to="button.route"
+        >
+          {{button.text}}
+        </v-btn>
+      </v-card-actions>
+    </v-container>
+  </v-card>
   </v-layout>
 </template>
 
 <script>
-import axios from 'axios';
 export default {
-  data() {
-    return {
-      quote: "",
-      author: ''
-    };
+  layout: 'empty',
+  props: {
+    error: {
+      type: Object,
+      default: null
+    }
   },
-  async created() {
-    let res = await axios.get('api');
-    this.quote = res.data.text;
-    this.author = res.data.source;
+  data () {
+    return {
+      pageNotFound: '404 Not Found',
+      otherError: 'An error occurred',
+      card: {
+        subheading: '404',
+        subheading_typography: 'subtitle font-weight-light justify-center',
+        color: "transparent",
+        elevation: 0
+      },
+      buttons: [
+        {
+          text: 'home',
+          color: '#' + 'primary',
+          route: '/'
+        }
+      ],
+    }
+  },
+  head () {
+    const title =
+      this.error.statusCode === 404 ? this.pageNotFound : this.otherError
+    return {
+      title
+    }
   }
-};
+}
 </script>
 
 <style scoped>
