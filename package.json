@@ -13,7 +13,7 @@
     "@fortawesome/free-brands-svg-icons": "^5.14.0",
     "@fortawesome/free-solid-svg-icons": "^5.14.0",
     "frontmatter-markdown-loader": "^3.6.0",
-    "nuxt": "^2.13.0",
+    "nuxt": "^2.16.1",
     "nuxt-fontawesome": "^0.4.0"
   },
   "devDependencies": {
