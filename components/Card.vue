@@ -12,7 +12,7 @@
           tile
           outlined
           :color="button.color"
-          class="ma-1"
+          class="ma-1 justify-items-center"
           :href="button.href"
           :target="button.target"
           nuxt
