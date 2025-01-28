@@ -52,7 +52,7 @@ export default {
         color: 'primary',
       },
       subheading: {
-        text: 'iOS Engineer',
+        text: 'iOS Engineer | ray@raytruong.dev',
         typography: 'body-2 mt-4',
         color: 'primary'
       },
@@ -82,14 +82,6 @@ export default {
           link: '/resume.pdf',
           target: '_blank',
           text: " Resume"
-        },
-        {
-          key: 'email',
-          icon: ['fa', 'envelope'],
-          color: 'primary',
-          link: 'mailto:ray@raytruong.dev',
-          target: '_blank',
-          text: " Email"
         },
         {
           key: 'github',
