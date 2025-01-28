@@ -56,16 +56,16 @@ export default {
         color: 'primary'
       },
       buttons: [
-        {
-          text: 'journal',
-          color: 'primary',
-          route: 'entries'
-        },
-        {
-          text: 'portfolio',
-          color: 'primary',
-          route: 'portfolio'
-        },
+        // {
+        //   text: 'journal',
+        //   color: 'primary',
+        //   route: 'entries'
+        // },
+        // {
+        //   text: 'portfolio',
+        //   color: 'primary',
+        //   route: 'portfolio'
+        // },
         {
           text: 'resume',
           color: 'primary',
