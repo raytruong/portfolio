@@ -80,28 +80,32 @@ export default {
           icon: ['fas', 'briefcase'],
           color: 'primary',
           link: '/resume.pdf',
-          target: '_blank'
+          target: '_blank',
+          text: "Resume"
         },
         {
           key: 'email',
           icon: ['fa', 'envelope'],
           color: 'primary',
           link: 'mailto:ray@raytruong.dev',
-          target: '_blank'
+          target: '_blank',
+          text: "Email"
         },
         {
           key: 'github',
           icon: ['fab', 'github-alt'],
           color: 'primary',
           link: 'https://www.github.com/raytruong',
-          target: '_blank'
+          target: '_blank',
+          text: "Github"
         },
         {
           key: 'linkedin',
           icon: ['fab', 'linkedin-in'],
           color: 'primary',
           link: 'https://www.linkedin.com/in/ray-truong',
-          target: '_blank'
+          target: '_blank',
+          text: "LinkedIn"
         }
       ]
     }
