@@ -4,7 +4,7 @@
   >
     <v-container>
       <v-card-title :class="name.typography" :color="name.color">{{name.text}}</v-card-title>
-      <!-- <v-card-text :class="subheading.typography" :color="subheading.color">{{subheading.text}}</v-card-text> -->
+      <-- <v-card-text :class="subheading.typography" :color="subheading.color">{{subheading.text}}</v-card-text> -->
       <v-card-actions>
         <v-btn
           v-for="button in buttons"
@@ -31,7 +31,7 @@
           text
         >
           <font-awesome-icon :icon="button.icon" :color="button.color" style="font-size: 18px" />
-          {{ button.text}}
+          {{button.text}}
         </v-btn>
       </v-card-actions>
     </v-container>
@@ -52,7 +52,7 @@ export default {
         color: 'primary',
       },
       subheading: {
-        text: 'Software Engineering & Denim',
+        text: 'iOS Engineer',
         typography: 'body-2 mt-4',
         color: 'primary'
       },
@@ -81,7 +81,7 @@ export default {
           color: 'primary',
           link: '/resume.pdf',
           target: '_blank',
-          text: "Resume"
+          text: " Resume"
         },
         {
           key: 'email',
@@ -89,7 +89,7 @@ export default {
           color: 'primary',
           link: 'mailto:ray@raytruong.dev',
           target: '_blank',
-          text: "Email"
+          text: " Email"
         },
         {
           key: 'github',
@@ -97,7 +97,7 @@ export default {
           color: 'primary',
           link: 'https://www.github.com/raytruong',
           target: '_blank',
-          text: "Github"
+          text: " Github"
         },
         {
           key: 'linkedin',
@@ -105,7 +105,7 @@ export default {
           color: 'primary',
           link: 'https://www.linkedin.com/in/ray-truong',
           target: '_blank',
-          text: "LinkedIn"
+          text: " LinkedIn"
         }
       ]
     }
