@@ -4,7 +4,7 @@
   >
     <v-container>
       <v-card-title :class="name.typography" :color="name.color">{{name.text}}</v-card-title>
-      <-- <v-card-text :class="subheading.typography" :color="subheading.color">{{subheading.text}}</v-card-text> -->
+      <v-card-text :class="subheading.typography" :color="subheading.color">{{subheading.text}}</v-card-text>
       <v-card-actions>
         <v-btn
           v-for="button in buttons"
