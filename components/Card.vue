@@ -31,7 +31,7 @@
           text
         >
           <font-awesome-icon :icon="button.icon" :color="button.color" style="font-size: 18px" />
-          {{button.text}}
+          {{ button.text}}
         </v-btn>
       </v-card-actions>
     </v-container>
@@ -47,7 +47,7 @@ export default {
         color: "transparent"
       },
       name: {
-        text: `Ray Truong.`,
+        text: `Raymond Truong`,
         typography: 'signature mb-3',
         color: 'primary',
       },
@@ -77,7 +77,7 @@ export default {
       media: [
         {
           key: 'resume',
-          icon: ['fas', 'briefcase'],
+          icon: ['fa', 'briefcase'],
           color: 'primary',
           link: '/resume.pdf',
           target: '_blank',
