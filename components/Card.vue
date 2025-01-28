@@ -5,14 +5,14 @@
     <v-container>
       <v-card-title :class="name.typography" :color="name.color">{{name.text}}</v-card-title>
       <!-- <v-card-text :class="subheading.typography" :color="subheading.color">{{subheading.text}}</v-card-text> -->
-      <v-card-actions>
+      <v-card-actions class="justify-center">
         <v-btn
           v-for="button in buttons"
           :key="button.route"
           tile
           outlined
           :color="button.color"
-          class="ma-1 justify-items-center"
+          class="ma-1"
           :href="button.href"
           :target="button.target"
           nuxt
@@ -66,12 +66,12 @@ export default {
         //   color: 'primary',
         //   route: 'portfolio'
         // },
-        {
-          text: 'resume',
-          color: 'primary',
-          href: '/resume.pdf',
-          target: '_blank'
-        }
+        // {
+        //   text: 'resume',
+        //   color: 'primary',
+        //   href: '/resume.pdf',
+        //   target: '_blank'
+        // }
       ],
       media: [
         {
