@@ -62,7 +62,7 @@ export default {
         imports: [
           {
             set: '@fortawesome/free-solid-svg-icons',
-            icons: ['faEnvelope']
+            icons: ['faEnvelope', 'faBriefcase']
           },
           {
             set: '@fortawesome/free-brands-svg-icons',
