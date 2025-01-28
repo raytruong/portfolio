@@ -31,7 +31,7 @@
           text
         >
           <font-awesome-icon :icon="button.icon" :color="button.color" style="font-size: 18px" />
-          {{button.text}}
+          <span class="ml-2">{{ button.text }}</span>
         </v-btn>
       </v-card-actions>
     </v-container>
@@ -53,7 +53,7 @@ export default {
       },
       subheading: {
         text: 'iOS Engineer | ray@raytruong.dev',
-        typography: 'body-2 mt-4',
+        typography: 'subtitle-1 mt-4',
         color: 'primary'
       },
       buttons: [
