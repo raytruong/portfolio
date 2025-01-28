@@ -55,7 +55,7 @@ export default {
       },
       subheading: {
         text: 'iOS Engineer | ray@raytruong.dev',
-        typography: 'subtitle-1 mt-4 ml-2',
+        typography: 'mt-8 ml-4',
         color: 'primary'
       },
       buttons: [
