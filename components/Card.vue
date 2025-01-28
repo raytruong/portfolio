@@ -5,7 +5,7 @@
     <v-container>
       <v-card-title :class="name.typography" :color="name.color">{{name.text}}</v-card-title>
       <!-- <v-card-text :class="subheading.typography" :color="subheading.color">{{subheading.text}}</v-card-text> -->
-      <v-card-actions class="justify-center">
+      <v-card-actions>
         <v-btn
           v-for="button in buttons"
           :key="button.route"
@@ -31,6 +31,7 @@
           text
         >
           <font-awesome-icon :icon="button.icon" :color="button.color" style="font-size: 18px" />
+          {{button.text}}
         </v-btn>
       </v-card-actions>
     </v-container>
@@ -74,6 +75,13 @@ export default {
         // }
       ],
       media: [
+        {
+          key: 'resume',
+          icon: ['fas', 'briefcase'],
+          color: 'primary',
+          link: '/resume.pdf',
+          target: '_blank'
+        },
         {
           key: 'email',
           icon: ['fa', 'envelope'],
