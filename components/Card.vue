@@ -85,14 +85,14 @@ export default {
           target: '_blank',
           text: "Resume"
         },
-        {
-          key: 'github',
-          icon: ['fab', 'github-alt'],
-          color: 'primary',
-          link: 'https://www.github.com/raytruong',
-          target: '_blank',
-          text: "Github"
-        },
+        // {
+        //   key: 'github',
+        //   icon: ['fab', 'github-alt'],
+        //   color: 'primary',
+        //   link: 'https://www.github.com/raytruong',
+        //   target: '_blank',
+        //   text: "Github"
+        // },
         {
           key: 'linkedin',
           icon: ['fab', 'linkedin-in'],
