@@ -49,7 +49,7 @@ export default {
         color: "transparent"
       },
       name: {
-        text: `Raymond Truong`,
+        text: `Ray Truong`,
         typography: 'signature mb-3',
         color: 'primary',
       },
@@ -83,7 +83,7 @@ export default {
           color: 'primary',
           link: '/resume.pdf',
           target: '_blank',
-          text: " Resume"
+          text: "Resume"
         },
         {
           key: 'github',
@@ -91,7 +91,7 @@ export default {
           color: 'primary',
           link: 'https://www.github.com/raytruong',
           target: '_blank',
-          text: " Github"
+          text: "Github"
         },
         {
           key: 'linkedin',
@@ -99,7 +99,7 @@ export default {
           color: 'primary',
           link: 'https://www.linkedin.com/in/ray-truong',
           target: '_blank',
-          text: " LinkedIn"
+          text: "LinkedIn"
         }
       ]
     }
