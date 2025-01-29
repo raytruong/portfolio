@@ -27,7 +27,7 @@
         <v-btn
           v-for="button in media"
           :key="button.key"
-          class="mx-5"
+          class="mx-4"
           :href="button.link"
           :target="button.target"
           text
